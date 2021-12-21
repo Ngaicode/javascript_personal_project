@@ -13,6 +13,7 @@ if (hasDriversLiscence) {
 //function declaration
 function logger() {
     console.log('my name is kevin');
+    console.log('I am learning');
 }
 //calling /running /invoking the function
 logger();
