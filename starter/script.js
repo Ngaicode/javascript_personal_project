@@ -17,9 +17,7 @@ function logger() {
 }
 //calling /running /invoking the function
 logger();
-logger();
-logger();
-logger();
+
 
 
 function fruitProcessor(apples, oranges) {
