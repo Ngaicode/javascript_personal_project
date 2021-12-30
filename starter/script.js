@@ -13,7 +13,7 @@ if (hasDriversLiscence) {
 //function declaration
 function logger() {
     console.log('my name is kevin mjomba jumwa');
-    console.log('I am learning');
+    console.log('I am learning a lot of exciting stuff');
     console.log('im slowy starting to piece it all together');
     console.log('5');
 }
