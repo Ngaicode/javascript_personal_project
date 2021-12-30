@@ -14,7 +14,8 @@ if (hasDriversLiscence) {
 function logger() {
     console.log('my name is kevin');
     console.log('I am learning');
-    console.log('im slowy starting to piece it all together')
+    console.log('im slowy starting to piece it all together');
+    console.log('5');
 }
 //calling /running /invoking the function
 logger();
