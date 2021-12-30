@@ -21,11 +21,12 @@ function logger() {
 logger();
 
 
-
+// function declaration with parameters
 function fruitProcessor(apples, oranges) {
     const juice = `juice with ${apples} apples and ${oranges} oranges`;
     return juice;
 }
+// invoking the function with arguments
 const applejuice = fruitProcessor(5, 0);
 console.log(applejuice);
 
