@@ -30,7 +30,7 @@ function fruitProcessor(apples, oranges) {
 const applejuice = fruitProcessor(5, 0);
 console.log(applejuice);
 
-const appleOrangeJuice = fruitProcessor(2, 4);
+const appleOrangeJuice = fruitProcessor(3, 4);
 console.log(appleOrangeJuice);
 
 
