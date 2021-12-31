@@ -10,7 +10,7 @@ if (hasDriversLiscence) {
 
 // const interface = 'audio';*/
 
-alert('How are you my G');
+// alert('How are you my G');
 
 
 
