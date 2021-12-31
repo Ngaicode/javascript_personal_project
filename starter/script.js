@@ -16,7 +16,8 @@ function logger() {
     console.log('I am learning a lot of exciting stuff');
     console.log('im slowy starting to piece it all together');
     console.log('5');
-    console.log(`honestly i'm really exited about sending code to github via SSH `)
+    console.log(`honestly i'm really exited about sending code to github via SSH `);
+    console.log(`honestly at this point i'm just fooling around at this point.Hahaha`);
 }
 //calling /running /invoking the function
 logger();
