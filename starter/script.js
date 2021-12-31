@@ -34,8 +34,8 @@ console.log(applejuice);
 const appleOrangeJuice = fruitProcessor(3, 4);
 console.log(appleOrangeJuice);
 
-
-
+const lotOfFFruit = fruitProcessor(56, 37);
+console.log(lotOfFFruit);
 
 
 
