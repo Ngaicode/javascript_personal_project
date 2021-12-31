@@ -10,6 +10,23 @@ if (hasDriversLiscence) {
 
 // const interface = 'audio';*/
 
+alert('How are you my G');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //function declaration
 function logger() {
     console.log('my name is kevin mjomba jumwa');
