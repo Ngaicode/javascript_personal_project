@@ -103,10 +103,11 @@ console.log(age1, age2)*/
 //     return 2037 - birthYear;
 // }
 
-
+//Both function expressions and arrow functions produce a value that can be stored in a variable
 // trying to understand arrow functions
+//one liner arrow function
 const calcAge3 = birthYear => 2037 - birthYear;//because this is one line of code in the function body,the output will be automatically implicitly returned by javascript
-const age3 = calcAge3(1990);
+const age3 = calcAge3(1990);//we call/run/invoke an arrow function by writing the variable name it is stored in followed by a parenthesis with the parameters(if any)
 console.log(age3);
 
 // arrow function that calculates the number of years till retirement
@@ -119,7 +120,7 @@ const yearsUntilRetirement = (birthYear, firstName) => {
     // returns a template literal
     return `${firstName} retires in ${retirement} years`
 }
-
+// calling the function
 console.log(yearsUntilRetirement(2000, 'Kevin'))
 console.log(yearsUntilRetirement(2004, 'Mjomba'))
 
