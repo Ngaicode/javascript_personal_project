@@ -8,7 +8,7 @@ if (hasDriversLiscence) {
     console.log('i can drive :D')
 }
 
-// const interface = 'audio';*/
+// const interface = 'audio';
 
 // alert('How are you my G');
 
@@ -53,9 +53,18 @@ const appleOrangeJuice = fruitProcessor(3, 4);
 console.log(appleOrangeJuice);
 
 const lotOfFFruit = fruitProcessor(56, 37);
-console.log(lotOfFFruit);
+console.log(lotOfFFruit);*/
 
 
+
+
+// it is the code within the function body(within the curly braces) that will be executed whenever we call this function 
+function logger() {
+    console.log('my name is Kevin and im repeating this exercise once again');
+}
+
+// calling/running/invoking the function
+logger();
 
 
 
