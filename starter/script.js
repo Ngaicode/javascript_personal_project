@@ -71,7 +71,7 @@ logger(); // one can call a function as many times as they wish
 function foodProcessor(apples, oranges) {
     console.log(apples, oranges);
     const juice = `juice with ${apples} apples and ${oranges} oranges`;
-    return juice; //the return keyword specifies the desired output
+    return juice; //the return keyword specifies the desired output that we want the function to give
 }
 
 const appleJuice = foodProcessor(5, 0)
