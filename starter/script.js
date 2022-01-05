@@ -80,7 +80,7 @@ console.log(foodProcessor(5, 0));
 
 const appleOrangeJuice = foodProcessor(3, 2);
 console.log(appleOrangeJuice);
-console.log(foodProcessor(3, 2))*/
+console.log(foodProcessor(3, 2))
 
 // in javascript,there are different ways of writing functions
 // function declaration
@@ -96,14 +96,27 @@ const calcAge2 = function (birthYear) {
     return 2037 - birthYear;
 }
 const age2 = calcAge2(1991);
-console.log(age1, age2)
+console.log(age1, age2)*/
 
 
+// const calcAge2 = function (birthYear) {
+//     return 2037 - birthYear;
+// }
 
 
+// tring to understand arrow functions
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(1990);
+console.log(age3)
 
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2037 - birthYear;
+    const retirement = 65 - age;
+    return `${firstName} retires in ${retirement} years`
+}
 
-
+console.log(yearsUntilRetirement(2000, 'Kevin'))
+console.log(yearsUntilRetirement(2004, 'Mjomba'))
 
 
 
