@@ -60,17 +60,27 @@ console.log(lotOfFFruit);*/
 
 // it is the code within the function body(within the curly braces) that will be executed whenever we call this function 
 function logger() {
-    console.log('my name is Kevin and im repeating this exercise once again');
+    console.log(`my name is Kevin and I'm repeating this exercise`);
 }
 
 // calling/running/invoking the function
 logger();
+logger();
+logger(); // one can call a function as many times as they wish
 
+function foodProcessor(apples, oranges) {
+    console.log(apples, oranges);
+    const juice = `juice with ${apples} apples and ${oranges} oranges`;
+    return juice; //the return keyword specifies the desired output
+}
 
+const appleJuice = foodProcessor(5, 0)
+console.log(appleJuice);
+console.log(foodProcessor(5, 0));
 
-
-
-
+const appleOrangeJuice = foodProcessor(3, 2);
+console.log(appleOrangeJuice);
+console.log(foodProcessor(3, 2))
 
 
 
