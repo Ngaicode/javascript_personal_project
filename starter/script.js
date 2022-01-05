@@ -53,7 +53,7 @@ const appleOrangeJuice = fruitProcessor(3, 4);
 console.log(appleOrangeJuice);
 
 const lotOfFFruit = fruitProcessor(56, 37);
-console.log(lotOfFFruit);*/
+console.log(lotOfFFruit);
 
 
 
@@ -80,11 +80,23 @@ console.log(foodProcessor(5, 0));
 
 const appleOrangeJuice = foodProcessor(3, 2);
 console.log(appleOrangeJuice);
-console.log(foodProcessor(3, 2))
+console.log(foodProcessor(3, 2))*/
 
+// in javascript,there are different ways of writing functions
+// function declaration
 
+function calcAge1(birthYear) {
+    return 2037 - birthYear;
+}
+const age1 = calcAge1(2000);
+console.log(age1)
 
-
+// in function expressions,since we use nameless functions,the variable name thn becomes the function name
+const calcAge2 = function (birthYear) {
+    return 2037 - birthYear;
+}
+const age2 = calcAge2(1991);
+console.log(age1, age2)
 
 
 
