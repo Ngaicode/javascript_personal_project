@@ -104,14 +104,19 @@ console.log(age1, age2)*/
 // }
 
 
-// tring to understand arrow functions
-const calcAge3 = birthYear => 2037 - birthYear;
+// trying to understand arrow functions
+const calcAge3 = birthYear => 2037 - birthYear;//because this is one line of code in the function body,the output will be automatically implicitly returned by javascript
 const age3 = calcAge3(1990);
-console.log(age3)
+console.log(age3);
 
+// arrow function that calculates the number of years till retirement
+// 1.Arrow function with multiple parameters and lines of code
+// 2.when an arrow function contains multiple parameters,then the parameters have to be put inside parenthesis and be separated by comas
+// 3.when an arrow function contains multiple lines of code(requires more logic)in the function body,then it has to be put in curly braces
 const yearsUntilRetirement = (birthYear, firstName) => {
-    const age = 2037 - birthYear;
-    const retirement = 65 - age;
+    const currentAge = 2037 - birthYear;
+    const retirement = 65 - currentAge;
+    // returns a template literal
     return `${firstName} retires in ${retirement} years`
 }
 
