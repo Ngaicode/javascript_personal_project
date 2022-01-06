@@ -96,7 +96,7 @@ const calcAge2 = function (birthYear) {
     return 2037 - birthYear;
 }
 const age2 = calcAge2(1991);
-console.log(age1, age2)*/
+console.log(age1, age2)
 
 
 // const calcAge2 = function (birthYear) {
@@ -122,13 +122,26 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 }
 // calling the function
 console.log(yearsUntilRetirement(2000, 'Kevin'))
-console.log(yearsUntilRetirement(2004, 'Mjomba'))
+console.log(yearsUntilRetirement(2004, 'Mjomba'))*/
 
 
 
 
+// calling a function within another function
+
+function cutFruitPieces(fruit) {
+    return fruit * 4;
+
+}
 
 
+function foodProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangepieces = cutFruitPieces(oranges);
+    const juice = `juice with ${applePieces} pieces of  apples and ${orangepieces} pieces of  orange`;
+    return juice; //the return keyword specifies the desired output that we want the function to give
+}
+console.log(foodProcessor(2, 3))
 
 
 
