@@ -215,6 +215,14 @@ const years = new Array(1985, 2000, 1991, 1971, 2005);
 console.log(years);
 
 
+// using arrays
+// arrays are zero based,what this means is that they are indexed starting with zero
+// when you want to use an array,you write the array name followed by box brackets then insert the index of the data value that you want to use
+console.log(friends[0]);
+console.log(friends[2]);
+console.log(years[2]);
+
+
 
 
 
