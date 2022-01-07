@@ -160,7 +160,7 @@ const yearsUntilRetirement = function (birthYear, firstName) {
     }
 }
 
-console.log(yearsUntilRetirement(1990, "Kevin"));*/
+console.log(yearsUntilRetirement(1990, "Kevin"));
 
 
 // coding challenges
@@ -197,7 +197,16 @@ function checkWinner(dolphinAverage1, koalaAverage1, avgdolph2, avgKoala2) {
 
 
 }
-checkWinner(dolphinAverage1, koalaAverage1, avgdolph2, avgKoala2);
+checkWinner(dolphinAverage1, koalaAverage1, avgdolph2, avgKoala2);*/
+
+const friend1 = 'kevin';
+const friend2 = "mjomba";
+const friend3 = "jumwa";
+
+
+// first javascript array ever
+const friends = ['kevin', 'mjomba ', 'jumwa'];
+console.log(friends);
 
 
 
