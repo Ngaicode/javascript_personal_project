@@ -58,7 +58,7 @@ console.log(lotOfFFruit);
 
 
 
-// it is the code within the function body(within the curly braces) that will be executed whenever we call this function 
+// it is the code within the function body(within the curly braces) that will be executed whenever we call this function
 function logger() {
     console.log(`my name is Kevin and I'm repeating this exercise`);
 }
@@ -141,7 +141,7 @@ function foodProcessor(apples, oranges) {
     const juice = `juice with ${applePieces} pieces of  apples and ${orangepieces} pieces of  orange`;
     return juice; //the return keyword specifies the desired output that we want the function to give
 }
-console.log(foodProcessor(2, 3))*/
+console.log(foodProcessor(2, 3))
 
 const calcAge = function (birthYear) {
     return 2037 - birthYear;
@@ -160,9 +160,33 @@ const yearsUntilRetirement = function (birthYear, firstName) {
     }
 }
 
-console.log(yearsUntilRetirement(1990, "Kevin"));
+console.log(yearsUntilRetirement(1990, "Kevin"));*/
 
 
+// coding challenges
+
+const calcAverage = (score1, score2, score3) => {
+    const avScore = (score1 + score2 + score3) / 3;
+    return avScore;
+}
+const dolphinAverage1 = calcAverage(85, 54, 41);
+console.log(dolphinAverage1)
+const koalaAverage1 = calcAverage(23, 34, 27);
+console.log(koalaAverage1);
+
+function checkWinner(dolphinAverage1, koalaAverage1) {
+
+    if (dolphinAverage1 >= 2 * (koalaAverage1)) {
+        console.log(`Dolphins win ${dolphinAverage1} vs ${koalaAverage1}`)
+
+    } else if (koalaAverage1 > dolphinAverage1) {
+        console.log(`Koalas win ${koalaAverage1} vs ${dolphinAverage1}`);
+    }
+
+
+
+}
+checkWinner(dolphinAverage1, koalaAverage1);
 
 
 
