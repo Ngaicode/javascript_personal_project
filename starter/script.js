@@ -209,7 +209,9 @@ const friends = ['kevin', 'mjomba ', 'jumwa'];
 console.log(friends);
 
 
-
+// a different way of using arrays
+const years = new Array(1985, 2000, 1991, 1971, 2005);
+console.log(years);
 
 
 
