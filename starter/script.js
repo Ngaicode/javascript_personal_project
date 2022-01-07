@@ -240,10 +240,17 @@ const aboutMe = [firstName, 'mjomba', 'jumwa', 2022 - 2000, friends];
 console.log(aboutMe)
 
 
+function calcAge1(birthYear) {
+    return 2037 - birthYear;
+}
+const yearOfBirth = [1990, 1967, 2002, 2018];
+console.log(calcAge1(yearOfBirth[0]));
+console.log(calcAge1(yearOfBirth[2]));
+console.log(calcAge1(yearOfBirth[1]));
+console.log(calcAge1(yearOfBirth[yearOfBirth.length - 1]));
 
-
-
-
+const ages = [calcAge1(yearOfBirth[0]), calcAge1(yearOfBirth[2]), calcAge1(yearOfBirth[1])];
+console.log(ages)
 
 
 
