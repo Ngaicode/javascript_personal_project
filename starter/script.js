@@ -204,12 +204,13 @@ const friend2 = "mjomba";
 const friend3 = "jumwa";
 
 
-// first javascript array ever
+// first javascript array ever by using the literal syntax []
 const friends = ['kevin', 'mjomba ', 'jumwa'];
 console.log(friends);
 
 
 // a different way of using arrays
+// when you use the array function,you don't need to use the box brackets
 const years = new Array(1985, 2000, 1991, 1971, 2005);
 console.log(years);
 
