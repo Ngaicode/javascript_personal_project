@@ -234,7 +234,10 @@ console.log(friends[friends.length - 1]);
 
 // how to change the elements of an array(the logic is a lot like variable re-assignment)
 friends[2] = 'Ngai';
-console.log(friends)
+console.log(friends);
+const firstName = "Ngai";
+const aboutMe = [firstName, 'mjomba', 'jumwa', 2022 - 2000, friends];
+console.log(aboutMe)
 
 
 
