@@ -164,7 +164,7 @@ console.log(yearsUntilRetirement(1990, "Kevin"));*/
 
 
 // coding challenges
-
+// function that calculates the average score
 const calcAverage = (score1, score2, score3) => {
     const avScore = (score1 + score2 + score3) / 3;
     return avScore;
@@ -173,20 +173,29 @@ const dolphinAverage1 = calcAverage(85, 54, 41);
 console.log(dolphinAverage1)
 const koalaAverage1 = calcAverage(23, 34, 27);
 console.log(koalaAverage1);
+const avgdolph2 = calcAverage(44, 23, 71);
+console.log(avgdolph2);
+const avgKoala2 = calcAverage(65, 54, 49);
+console.log(avgKoala2);
 
-function checkWinner(dolphinAverage1, koalaAverage1) {
+// function that checks for the winner
+function checkWinner(dolphinAverage1, koalaAverage1, avgdolph2, avgKoala2) {
 
     if (dolphinAverage1 >= 2 * (koalaAverage1)) {
-        console.log(`Dolphins win ${dolphinAverage1} vs ${koalaAverage1}`)
+        console.log(`Dolphins win ${dolphinAverage1} vs  Koalas ${koalaAverage1}`)
 
-    } else if (koalaAverage1 > dolphinAverage1) {
-        console.log(`Koalas win ${koalaAverage1} vs ${dolphinAverage1}`);
+    } else if (koalaAverage1 >= 2 * dolphinAverage1) {
+        console.log(`Koalas win ${koalaAverage1} vs Dolphins ${dolphinAverage1}`);
+    } else if (avgdolph2 >= 2 * avgKoala2) {
+        console.log(`Dolphins win ${avgdolph2} vs koalas ${avgKoala2}`)
+    } else if (avgKoala2 >= 2 * avgdolph2) {
+        console.log(`Koalas win ${avgKoala2} vs Dolphins ${avgdolph2}`)
     }
 
 
 
 }
-checkWinner(dolphinAverage1, koalaAverage1);
+checkWinner(dolphinAverage1, koalaAverage1, avgdolph2, avgKoala2);
 
 
 
