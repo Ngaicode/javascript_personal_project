@@ -223,8 +223,13 @@ console.log(friends[2]);
 console.log(years[2]);
 
 
+// knowing the exact amount of elements in an array
+// we use the  .legnth is a property
+console.log(friends.length);
+console.log(years.length)
 
 
+console.log(friends[friends.length - 1])
 
 
 
