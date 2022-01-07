@@ -190,6 +190,8 @@ function checkWinner(dolphinAverage1, koalaAverage1, avgdolph2, avgKoala2) {
         console.log(`Dolphins win ${avgdolph2} vs koalas ${avgKoala2}`)
     } else if (avgKoala2 >= 2 * avgdolph2) {
         console.log(`Koalas win ${avgKoala2} vs Dolphins ${avgdolph2}`)
+    } else {
+        console.log('nobody wins')
     }
 
 
