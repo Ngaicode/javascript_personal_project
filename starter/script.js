@@ -226,11 +226,15 @@ console.log(years[2]);
 // knowing the exact amount of elements in an array
 // we use the  .legnth is a property
 console.log(friends.length);
-console.log(years.length)
+console.log(years.length);
 
 
-console.log(friends[friends.length - 1])
+console.log(friends[friends.length - 1]);
 
+
+// how to change the elements of an array(the logic is a lot like variable re-assignment)
+friends[2] = 'Ngai';
+console.log(friends)
 
 
 
