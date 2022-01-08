@@ -197,7 +197,7 @@ function checkWinner(dolphinAverage1, koalaAverage1, avgdolph2, avgKoala2) {
 
 
 }
-checkWinner(dolphinAverage1, koalaAverage1, avgdolph2, avgKoala2);*/
+checkWinner(dolphinAverage1, koalaAverage1, avgdolph2, avgKoala2);
 
 const friend1 = 'kevin';
 const friend2 = "mjomba";
@@ -249,8 +249,20 @@ console.log(calcAge1(yearOfBirth[2]));
 console.log(calcAge1(yearOfBirth[1]));
 console.log(calcAge1(yearOfBirth[yearOfBirth.length - 1]));
 
-const ages = [calcAge1(yearOfBirth[0]), calcAge1(yearOfBirth[2]), calcAge1(yearOfBirth[1])];
-console.log(ages)
+const ages = [calcAge1(yearOfBirth[0]), calcAge1(yearOfBirth[2]), calcAge1(yearOfBirth[1])];*
+console.log(ages)*/
+
+
+
+// methods are basically built in javascript functions that work on an array
+// array methods
+// the push method adds elements to the end of an array
+const friends = ['kevin', 'mjomba ', 'jumwa'];
+// .push method adds elements to the end of an array
+friends.push('Jumwa');
+friends.push(360);
+console.log(friends);
+
 
 
 
