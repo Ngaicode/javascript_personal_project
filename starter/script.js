@@ -283,6 +283,22 @@ friends.shift();
 console.log(friends);
 
 
+//indexof() method tells us te index of a particular element in ana array
+console.log(friends.indexOf('jumwa'));
+
+// includes() method checks to see wether an element is found in an array,it returns true or false
+friends.unshift(23);
+console.log(friends.includes('kevin'));
+console.log(friends.includes('bob'));
+console.log(friends.includes(23));
+
+if (friends.includes('jumwa')) {
+    console.log('You have a friend called jumwa');
+}
+
+console.log(friends)
+
+
 
 
 
