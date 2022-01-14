@@ -370,6 +370,7 @@ if (kevinObject[intrestedIn]) {
 
 kevinObject.location = 'Nairobi';
 kevinObject['twitter'] = '@yulMseeWaJuja';
+kevinObject.thirdName = 'jumwa'
 console.log(kevinObject)
 
 // challenge
