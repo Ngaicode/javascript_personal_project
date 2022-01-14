@@ -323,6 +323,7 @@ const kevinArray = [
     2022 - 2000,
     ['Birech', 'Yasmin']
 ];
+kevinArray[1] = 'ngai'
 console.log(kevinArray);
 
 
