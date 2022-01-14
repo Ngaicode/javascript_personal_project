@@ -315,7 +315,7 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 console.log(tips);
 
 const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
-console.log(total);*/
+console.log(total);
 
 const kevinArray = [
     'kevin',
@@ -333,37 +333,48 @@ const kevinObject = {
     firstName: 'kevin',
     secondName: 'mjomba',
     age: 2022 - 2000,
-    friends: ['Birech', 'Yasmin']
+    friends: ['Birech', 'Yasmin'],
+    job: 'student',
 };
 
+console.log(kevinObject);*/
+
+// a closer look into objects
+const kevinObject = {
+    firstName: 'kevin',
+    secondName: 'mjomba',
+    age: 2022 - 2000,
+    friends: ['Birech', 'Yasmin'],
+    job: 'student',
+};
+console.log(kevinObject);
+console.log(kevinObject.secondName);
 console.log(kevinObject['friends']);
 
+const nameKey = 'Name';
+// the bracket notation is useful when we want to compute the property name
+// we can put any expression in the square brackets
+// when using bracket notation ,the property name has to be a string
+console.log(kevinObject['first' + nameKey]);
+console.log(kevinObject['second' + nameKey]);
 
 
+const intrestedIn = prompt('what do you want to know about kevin?Choose between firstname,secondname,age,friends and job');
+console.log(intrestedIn);
 
+if (kevinObject[intrestedIn]) {
+    console.log(kevinObject[intrestedIn]);
+} else {
+    console.log('wrong request!Choose between firstname,secondname,age,friends and job');
+}
 
+kevinObject.location = 'Nairobi';
+kevinObject['twitter'] = '@yulMseeWaJuja';
+console.log(kevinObject)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// challenge
+// kevin has two friends,and his best friend is called Rachael
+console.log(`${kevinObject.firstName} has ${kevinObject.friends.length} friends,and his best friend is called ${kevinObject.friends[0]}`);
 
 
 
