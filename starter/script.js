@@ -299,13 +299,14 @@ if (friends.includes('jumwa')) {
 console.log(friends)*/
 
 const calcTip = (bill) => {
-    if (bill >= 50 && bill <= 300) {
-        const tip = 0.15 * bill;
-        return tip;
-    } else {
-        const teep = 0.2 * bill
-        return teep;
-    }
+    return bill >= 50 && bill <= 300 ? 0.15 * bill : 0.2 * bill;
+    // if (bill >= 50 && bill <= 300) {
+    //     const tip = 0.15 * bill;
+    //     return tip;
+    // } else {
+    //     const teep = 0.2 * bill
+    //     return teep;
+    // }
 }
 console.log(calcTip(200));
 
