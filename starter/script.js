@@ -337,7 +337,7 @@ const kevinObject = {
     job: 'student',
 };
 
-console.log(kevinObject);*/
+console.log(kevinObject);
 
 // a closer look into objects
 const kevinObject = {
@@ -375,10 +375,30 @@ console.log(kevinObject)
 
 // challenge
 // kevin has two friends,and his best friend is called Rachael
-console.log(`${kevinObject.firstName} has ${kevinObject.friends.length} friends,and his best friend is called ${kevinObject.friends[0]}`);
+console.log(`${kevinObject.firstName} has ${kevinObject.friends.length} friends,and his best friend is called ${kevinObject.friends[0]}`);*/
 
+const kevinObject = {
+    firstName: 'kevin',
+    secondName: 'mjomba',
+    birthYear: 2000,
+    friends: ['Birech', 'Yasmin'],
+    job: 'student',
+    hasDriversLiscence: false,
+    getSummarry: function () {
+        return `${this.firstName} is a ${this.calcAge()} year old ${this.job} and he has ${this.hasDriversLiscence ? 'a' : 'no'} driver's license`
+    },
 
+    calcAge: function () {
+        this.age = 2022 - this.birthYear;
+        return this.age;
+    },
 
+};
+console.log(kevinObject.calcAge());
+console.log(kevinObject.age)
+console.log(kevinObject.getSummarry());
+// challenge
+// 'kevin is a 22 year old student and he has a driver's license'
 
 
 
