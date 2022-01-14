@@ -256,13 +256,31 @@ console.log(ages)*/
 
 // methods are basically built in javascript functions that work on an array
 // array methods
+// methods that add elements to an array
 // the push method adds elements to the end of an array
 const friends = ['kevin', 'mjomba ', 'jumwa'];
 // .push method adds elements to the end of an array
-friends.push('Jumwa');
-friends.push(360);
+friends.push('Ngai');
+const newLegnth = friends.push(360);
+console.log(friends, newLegnth);
+
+
+// the unshift method adds elements at the begining of an array
+friends.unshift('Mathew');
 console.log(friends);
 
+
+// methods that remove elements from an array
+// pop() method removes the last element of an array
+friends.pop();
+const removedElement = friends.pop(); //the pop method returns the value of the removed element
+console.log(friends);
+console.log(removedElement);
+
+
+// shift()method removes the first element of an array
+friends.shift();
+console.log(friends);
 
 
 
