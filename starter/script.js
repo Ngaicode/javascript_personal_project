@@ -296,7 +296,7 @@ if (friends.includes('jumwa')) {
     console.log('You have a friend called jumwa');
 }
 
-console.log(friends)*/
+console.log(friends)
 
 const calcTip = (bill) => {
     return bill >= 50 && bill <= 300 ? 0.15 * bill : 0.2 * bill;
@@ -315,8 +315,27 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 console.log(tips);
 
 const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
-console.log(total);
+console.log(total);*/
 
+const kevinArray = [
+    'kevin',
+    'mjomba',
+    2022 - 2000,
+    ['Birech', 'Yasmin']
+];
+console.log(kevinArray);
+
+
+// working with objects 
+// object literal syntax
+const kevinObject = {
+    firstName: 'kevin',
+    secondName: 'mjomba',
+    age: 2022 - 2000,
+    friends: ['Birech', 'Yasmin']
+};
+
+console.log(kevinObject['friends']);
 
 
 
