@@ -250,7 +250,7 @@ console.log(calcAge1(yearOfBirth[1]));
 console.log(calcAge1(yearOfBirth[yearOfBirth.length - 1]));
 
 const ages = [calcAge1(yearOfBirth[0]), calcAge1(yearOfBirth[2]), calcAge1(yearOfBirth[1])];*
-console.log(ages)*/
+console.log(ages)
 
 
 
@@ -296,9 +296,25 @@ if (friends.includes('jumwa')) {
     console.log('You have a friend called jumwa');
 }
 
-console.log(friends)
+console.log(friends)*/
 
+const calcTip = (bill) => {
+    if (bill >= 50 && bill <= 300) {
+        const tip = 0.15 * bill;
+        return tip;
+    } else {
+        const teep = 0.2 * bill
+        return teep;
+    }
+}
+console.log(calcTip(200));
 
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+console.log(tips);
+
+const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(total);
 
 
 
