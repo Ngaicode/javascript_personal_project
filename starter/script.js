@@ -381,7 +381,7 @@ const kevinObject = {
     firstName: 'kevin',
     secondName: 'mjomba',
     birthYear: 2000,
-    friends: ['Birech', 'Yasmin'],
+    friends: ['Birech', 'Yasmin','Peace'],
     job: 'student',
     hasDriversLiscence: false,
     getSummarry: function () {

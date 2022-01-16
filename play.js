@@ -15,4 +15,5 @@ const muthoniPeace = {
 console.log(muthoniPeace.doILOveHer);
 console.log(muthoniPeace['calcAge']());
 console.log(muthoniPeace['age']);
-console.log(muthoniPeace['getSummary']())
+console.log(muthoniPeace['getSummary']());
+console.log(muthoniPeace.birthYear)
