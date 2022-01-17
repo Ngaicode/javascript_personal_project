@@ -327,7 +327,7 @@ kevinArray[1] = 'ngai'
 console.log(kevinArray);
 
 
-// working with objects 
+// working with objects
 // object literal syntax
 const kevinObject = {
     firstName: 'kevin',
@@ -375,7 +375,7 @@ console.log(kevinObject)
 
 // challenge
 // kevin has two friends,and his best friend is called Rachael
-console.log(`${kevinObject.firstName} has ${kevinObject.friends.length} friends,and his best friend is called ${kevinObject.friends[0]}`);*/
+console.log(`${kevinObject.firstName} has ${kevinObject.friends.length} friends,and his best friend is called ${kevinObject.friends[0]}`);
 
 const kevinObject = {
     firstName: 'kevin',
@@ -396,12 +396,47 @@ const kevinObject = {
 };
 console.log(kevinObject.calcAge());
 console.log(kevinObject.age)
-console.log(kevinObject.getSummarry());
+console.log(kevinObject.getSummarry());*/
 // challenge
 // 'kevin is a 22 year old student and he has a driver's license'
 
 
+// separate key value pairs must be separated by commas
+const markObject = {
+    firstName: 'Mark',
+    secondName: 'Miller',
+    weightInKgs: 78,
+    height: 1.69,
+    calBMI: function () {
+        this.BMI = this.weightInKgs / (this.height * this.height);
+        return this.BMI;
+    },
 
+};
+console.log(markObject.calBMI());
+console.log(markObject['BMI']);
+console.log(markObject);
+
+const JOhnOBject = {
+    firstName: 'John',
+    secondName: 'Smith',
+    mass: 92,
+    height: 1.95,
+    calBMI: function () {
+        this.BMI = this.mass / (this.height * this.height);
+        return this.BMI
+    }
+
+
+};
+console.log(JOhnOBject.calBMI());
+console.log(JOhnOBject.BMI);
+
+if (markObject.BMI > JOhnOBject.BMI) {
+    console.log(`${markObject.firstName} BMI of ${markObject.BMI} is higher tan JOhn's BMI of ${JOhnOBject.BMI}`);
+} else {
+    console.log(`${JOhnOBject.firstName} BMI of ${JOhnOBject.BMI} is higher than Mark's BMI of ${markObject.BMI}`)
+}
 
 
 
