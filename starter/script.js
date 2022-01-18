@@ -473,12 +473,18 @@ const kevinArray = [
 kevinArray[0] = "Amani's"
 console.log(kevinArray[0])
 
+
+const types = [];
+
+
 for (let i = 0; i <= kevinArray.length - 1; i++) {
-    console.log(kevinArray[i], typeof (kevinArray[i]))
-}
+    // reading from an array
+    console.log(kevinArray[i], typeof (kevinArray[i]));
+    // creating a new array with the values from an initial array
+    types[i] = typeof (kevinArray[i]);
+};
 
-
-
+console.log(types);
 
 
 
