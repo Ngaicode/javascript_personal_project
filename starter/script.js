@@ -481,7 +481,8 @@ for (let i = 0; i <= kevinArray.length - 1; i++) {
     // reading from an array
     console.log(kevinArray[i], typeof (kevinArray[i]));
     // creating a new array with the values from an initial array
-    types[i] = typeof (kevinArray[i]);
+    // types[i] = typeof (kevinArray[i]);
+    types.push(typeof (kevinArray[i]));
 };
 
 console.log(types);
