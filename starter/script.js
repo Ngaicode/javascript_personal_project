@@ -487,7 +487,14 @@ for (let i = 0; i <= kevinArray.length - 1; i++) {
 
 console.log(types);
 
-
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+for (let index = 0; index <= years.length - 1; index++) {
+    ages.push(2022 - years[index]);
+    // a different syntax to achieve the same results
+    ages[index] = 2022 - years[index]
+};
+console.log(ages);
 
 
 
