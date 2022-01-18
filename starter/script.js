@@ -509,7 +509,7 @@ for (let i = 0; i <= kevinArray.length - 1; i++) {
 console.log('___break with number___')
 for (let i = 0; i <= kevinArray.length - 1; i++) {
     if (typeof (kevinArray[i]) === 'number') break;
-    // if continue is activated,the current iteration is immediately exited,so the lines of code coming after it in the for loop will not be exited in the current iteration
+    // break immediately exits the whole loop
     console.log(kevinArray[i], typeof (kevinArray[i]));
 
 };
