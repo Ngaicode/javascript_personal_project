@@ -466,7 +466,7 @@ const kevinArray = [
     'mjomba',
     2022 - 2000,
     'student',
-    ['Birech', 'Yasmin'],
+    ['Birech', 'Peace Amani Muthoni', 'Yasmin'],
     true,
 ];
 // reassigning values in arrays
@@ -495,6 +495,14 @@ for (let index = 0; index <= years.length - 1; index++) {
     ages[index] = 2022 - years[index]
 };
 console.log(ages);
+
+// continue and break
+console.log('___Only strings___')
+for (let i = 0; i <= kevinArray.length - 1; i++) {
+    if (typeof (kevinArray[i]) !== 'string') continue;
+    console.log(kevinArray[i], typeof (kevinArray[i]));
+
+};
 
 
 
