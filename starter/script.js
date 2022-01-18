@@ -396,7 +396,7 @@ const kevinObject = {
 };
 console.log(kevinObject.calcAge());
 console.log(kevinObject.age)
-console.log(kevinObject.getSummarry());*/
+console.log(kevinObject.getSummarry());
 // challenge
 // 'kevin is a 22 year old student and he has a driver's license'
 
@@ -414,7 +414,7 @@ const markObject = {
     },
 
 };
-console.log(markObject.calBMI());
+console.log(markObject['calBMI']());
 console.log(markObject['BMI']);
 console.log(markObject);
 
@@ -444,7 +444,20 @@ JOhnOBject.thirdName = 'Wolfsford'
 JOhnOBject['childName'] = 'Mary'
 console.log(JOhnOBject['thirdName']);
 console.log(JOhnOBject['childName']);
-console.log(JOhnOBject)
+console.log(JOhnOBject)*/
+
+// ___THE FOR LOOP___
+// loops alow us to automate repetative tasks
+// a for loop has three parts ,the initial value of a counter,the logical condition,and the counter update
+// the first part is the initial value of the counter
+// the second part is a logical condition that will be evaluated before each iteration of the loop,if the condition is true ,then the next loop iteration will run.As soon as this condition is false,then the loop will stop
+// MAJOR = the for loop will keep running for as long as the logical condition remains to be TRUE
+// in each iteration of the loop,the counter value gets increased or decreased as specified
+// we update the counter after each iteration
+// the counter is updated after the loop is run
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`lifting weights repitition ${rep}`);
+}
 
 
 
