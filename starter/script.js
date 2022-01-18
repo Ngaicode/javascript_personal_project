@@ -457,7 +457,7 @@ console.log(JOhnOBject)
 // the counter is updated after the loop is run
 for (let rep = 1; rep <= 10; rep++) {
     console.log(`lifting weights repitition ${rep}`);
-}*/
+}
 
 
 // LOOPING THROUGH ARRAYS,and the continue and break jeywords
@@ -512,7 +512,25 @@ for (let i = 0; i <= kevinArray.length - 1; i++) {
     // break immediately exits the whole loop
     console.log(kevinArray[i], typeof (kevinArray[i]));
 
-};
+};*/
+
+
+// looping backwards in arrays
+const kevinArray = [
+    'kevin',
+    'mjomba',
+    2022 - 2000,
+    'student',
+    ['Birech', 'Peace Amani Muthoni', 'Yasmin'],
+    true,
+    `meow`
+];
+for (let i = kevinArray.length - 1; i >= 0; i--) {
+    console.log(i, kevinArray[i])
+}
+
+
+
 
 
 
