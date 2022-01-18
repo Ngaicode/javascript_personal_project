@@ -512,7 +512,7 @@ for (let i = 0; i <= kevinArray.length - 1; i++) {
     // break immediately exits the whole loop
     console.log(kevinArray[i], typeof (kevinArray[i]));
 
-};*/
+};
 
 
 // looping backwards in arrays
@@ -535,11 +535,18 @@ for (let exercise = 1; exercise <= 3; exercise++) {
     for (let rep = 1; rep <= 5; rep++) {
         console.log(`this is repitition number ${rep} exercise number ${exercise}`);
     };
+};*/
+
+// THE WHILE LOOP
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`lifting weights repitition ${rep}`);
+}
+
+let rep = 1;
+while (rep <= 10) {
+    console.log(`WHILE:lifting weights repitition ${rep}`);
+    rep++;
 };
-
-
-
-
 
 
 
