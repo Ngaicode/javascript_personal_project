@@ -444,7 +444,7 @@ JOhnOBject.thirdName = 'Wolfsford'
 JOhnOBject['childName'] = 'Mary'
 console.log(JOhnOBject['thirdName']);
 console.log(JOhnOBject['childName']);
-console.log(JOhnOBject)*/
+console.log(JOhnOBject)
 
 // ___THE FOR LOOP___
 // loops alow us to automate repetative tasks
@@ -457,12 +457,25 @@ console.log(JOhnOBject)*/
 // the counter is updated after the loop is run
 for (let rep = 1; rep <= 10; rep++) {
     console.log(`lifting weights repitition ${rep}`);
+}*/
+
+
+// LOOPING THROUGH ARRAYS,and the continue and break jeywords
+const kevinArray = [
+    'kevin',
+    'mjomba',
+    2022 - 2000,
+    'student',
+    ['Birech', 'Yasmin'],
+    true,
+];
+// reassigning values in arrays
+kevinArray[0] = "Amani's"
+console.log(kevinArray[0])
+
+for (let i = 0; i <= kevinArray.length - 1; i++) {
+    console.log(kevinArray[i], typeof (kevinArray[i]))
 }
-
-
-
-
-
 
 
 
