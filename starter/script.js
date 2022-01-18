@@ -407,6 +407,7 @@ const markObject = {
     secondName: 'Miller',
     weightInKgs: 78,
     height: 1.69,
+    // an object metod is simply a property whose value happens to be a function expression
     calBMI: function () {
         this.BMI = this.weightInKgs / (this.height * this.height);
         return this.BMI;
@@ -422,6 +423,7 @@ const JOhnOBject = {
     secondName: 'Smith',
     mass: 92,
     height: 1.95,
+    // an object metod is simply a property whose value happens to be a function expression
     calBMI: function () {
         this.BMI = this.mass / (this.height * this.height);
         return this.BMI
@@ -437,6 +439,12 @@ if (markObject.BMI > JOhnOBject.BMI) {
 } else {
     console.log(`${JOhnOBject.firstName} BMI of ${JOhnOBject.BMI} is higher than Mark's BMI of ${markObject.BMI}`)
 }
+// assigning new values to an array
+JOhnOBject.thirdName = 'Wolfsford'
+JOhnOBject['childName'] = 'Mary'
+console.log(JOhnOBject['thirdName']);
+console.log(JOhnOBject['childName']);
+console.log(JOhnOBject)
 
 
 
