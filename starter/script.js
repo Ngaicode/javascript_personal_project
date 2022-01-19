@@ -570,7 +570,7 @@ const calcTip = function (bill) {
 }
 
 for (let index = 0; index <= bills.length - 1; index++) {
-    // calling the calcTip function inside the fo loop
+    // calling the calcTip function inside the for loop
     calcTip(bills[index]);
     console.log(calcTip(bills[index]));
     tips.push(calcTip(bills[index]));
