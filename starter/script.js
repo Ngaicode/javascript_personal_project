@@ -535,7 +535,7 @@ for (let exercise = 1; exercise <= 3; exercise++) {
     for (let rep = 1; rep <= 5; rep++) {
         console.log(`this is repitition number ${rep} exercise number ${exercise}`);
     };
-};*/
+};
 
 // THE WHILE LOOP
 // for (let rep = 1; rep <= 10; rep++) {
@@ -555,21 +555,40 @@ while (dice !== 6) {
     console.log(`you have rolled a ${dice}`);
     dice = Math.trunc(Math.random() * 6) + 1;
     if (dice === 6) console.log(`EXIT: you've rolled a ${dice}`);
+};*/
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+console.log(bills.length);
+const tips = [];
+const total = [];
+
+const calcTip = function (bill) {
+    // using a ternary operator to choose the tip percentage
+    return bill >= 50 && bill <= 300 ? 0.15 * bill : 0.2 * bill;
+
+}
+
+for (let index = 0; index <= bills.length - 1; index++) {
+    calcTip(bills[index]);
+    console.log(calcTip(bills[index]));
+    tips.push(calcTip(bills[index]));
+    total.push(bills[index] + tips[index]);
 };
+console.log(tips);
+console.log(total);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+const calcAverage = function (arr) {
+    let sum = 0;
+    for (let i = 0; i <= arr.length - 1; i++) {
+        // sum = sum + arr[i];
+        sum += arr[i];
+    };
+    console.log(sum);
+    const average = sum / arr.length;
+    return average;
+};
+console.log(calcAverage(total));
+console.log(calcAverage(tips));
 
 
 
