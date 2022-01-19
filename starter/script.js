@@ -559,6 +559,7 @@ while (dice !== 6) {
 
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 console.log(bills.length);
+// create an empty tips and totals array that will be filled later 
 const tips = [];
 const total = [];
 
@@ -569,6 +570,7 @@ const calcTip = function (bill) {
 }
 
 for (let index = 0; index <= bills.length - 1; index++) {
+    // calling the calcTip function inside the fo loop
     calcTip(bills[index]);
     console.log(calcTip(bills[index]));
     tips.push(calcTip(bills[index]));
@@ -577,6 +579,7 @@ for (let index = 0; index <= bills.length - 1; index++) {
 console.log(tips);
 console.log(total);
 
+// function to calculate the average of all the elements in an array
 const calcAverage = function (arr) {
     let sum = 0;
     for (let i = 0; i <= arr.length - 1; i++) {
