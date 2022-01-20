@@ -4,6 +4,9 @@ console.log("meooow");
 
 // practise with switch statements
 const dayarray = ["monday", "tuesday", "wednesday", "thursday", "friday", 203];
+dayarray.push("saturday", "sunday");
+
+// for loop that goes through the days of the week
 for (let i = 0; i < dayarray.length; i++) {
   let day = dayarray[i];
 
@@ -14,7 +17,7 @@ for (let i = 0; i < dayarray.length; i++) {
       console.log("go to coding meetup");
       break;
 
-    case "tuesday":
+    case "tuesday": // case checks for strict equality
       console.log("prepare teory videos");
       break;
     case "wednesday":
@@ -29,5 +32,8 @@ for (let i = 0; i < dayarray.length; i++) {
     case 203:
       console.log("this is  a number");
       break;
+    case "saturday":
+    case "sunday":
+      console.log("take a chill pill");
   }
 }
