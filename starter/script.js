@@ -1,4 +1,4 @@
-'use strict'; //placing this string as the first statement of every script file activates strict mode
+"use strict"; //placing this string as the first statement of every script file activates strict mode
 
 /*let hasDriversLiscence = false;
 const passDriversTest = true;
@@ -559,300 +559,37 @@ while (dice !== 6) {
 
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 console.log(bills.length);
-// create an empty tips and totals array that will be filled later 
+// create an empty tips and totals array that will be filled later
 const tips = [];
 const total = [];
 
 const calcTip = function (bill) {
-    // using a ternary operator to choose the tip percentage
-    return bill >= 50 && bill <= 300 ? 0.15 * bill : 0.2 * bill;
-
-}
+  // using a ternary operator to choose the tip percentage
+  return bill >= 50 && bill <= 300 ? 0.15 * bill : 0.2 * bill;
+};
 
 for (let index = 0; index <= bills.length - 1; index++) {
-    // calling the calcTip function inside the for loop
-    calcTip(bills[index]);
-    console.log(calcTip(bills[index]));
-    tips.push(calcTip(bills[index]));
-    total.push(bills[index] + tips[index]);
-};
+  // calling the calcTip function inside the for loop
+  calcTip(bills[index]);
+  console.log(calcTip(bills[index]));
+  tips.push(calcTip(bills[index]));
+  total.push(bills[index] + tips[index]);
+}
 console.log(tips);
 console.log(total);
 
 // function to calculate the average of all the elements in an array
 const calcAverage = function (arr) {
-    let sum = 0;
-    for (let i = 0; i <= arr.length - 1; i++) {
-        // sum = sum + arr[i];
-        sum += arr[i];
-    };
-    console.log(sum);
-    const average = sum / arr.length;
-    return average;
+  let sum = 0;
+  for (let i = 0; i <= arr.length - 1; i++) {
+    // sum = sum + arr[i];
+    sum += arr[i];
+  }
+  console.log(sum);
+  const average = sum / arr.length;
+  return average;
 };
 console.log(calcAverage(total));
 console.log(calcAverage(tips));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log("meooooow");
