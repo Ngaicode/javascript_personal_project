@@ -3,7 +3,7 @@
 console.log("meooow");
 
 // practise with switch statements
-const dayarray = ["monday", "tuesday", "wednesday", "thursday", "friday"];
+const dayarray = ["monday", "tuesday", "wednesday", "thursday", "friday", 203];
 for (let i = 0; i < dayarray.length; i++) {
   let day = dayarray[i];
 
@@ -25,6 +25,9 @@ for (let i = 0; i < dayarray.length; i++) {
       break;
     case "friday":
       console.log("take the day off");
+      break;
+    case 203:
+      console.log("this is  a number");
       break;
   }
 }
