@@ -29,3 +29,22 @@ console.log(newPeaceArray);
 for (let i = 0; i <= newPeaceArray.length - 1; i++) {
   console.log(newPeaceArray[i]);
 }
+
+// object
+const kevinObject = {
+  myFirstName: "kevin",
+  mySecondName: "Mjomba",
+  myThirdName: "Jumwa",
+  nameOfMOther: ["Elizabeth", "Ngai", "Jumwa"],
+  //   this function retrieves all the elements from the selected array
+  retrieveNameOfMother: (arr) => {
+    for (let index = 0; index < arr.length; index++) {
+      console.log(arr[index]);
+    }
+  },
+};
+// calling the object method
+kevinObject.retrieveNameOfMother(kevinObject.nameOfMOther);
+
+kevinObject.nameOfSister = ["Candice", "Mkamburi", "Jumwa"];
+console.log(kevinObject);
