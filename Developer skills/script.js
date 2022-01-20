@@ -35,5 +35,8 @@ for (let i = 0; i < dayarray.length; i++) {
     case "saturday":
     case "sunday":
       console.log("take a chill pill");
+    //   this is basically like the else statement,if no condition was met,this will then be run
+    default:
+      console.log("this is not in the array");
   }
 }
