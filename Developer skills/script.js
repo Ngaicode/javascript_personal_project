@@ -3,18 +3,29 @@
 console.log("meooow");
 
 // practise with switch statements
+// array with all the days of the week as strings
 const dayarray = ["monday", "tuesday", "wednesday", "thursday", "friday", 203];
+
+// using the push method to add two elements to the end of the array
 dayarray.push("saturday", "sunday");
+// logging to the console to see how many elements the array has
+console.log(dayarray.length);
 
 // for loop that goes through the days of the week
 for (let i = 0; i < dayarray.length; i++) {
+  // dynamically updating the value of the day variable as the for loop goes through the array
   let day = dayarray[i];
 
   // switch statement within a for loop
+  // switch statements come in handy when you are comparing one value  against  multiple times againts  'cases' whose values are alredy known.
+  // what is the brackets (the argument)in a switch statement is the condtition/value/expression that must be checked for truthyness against the different cases for the executable code to run.
+  // javascript uses strict equality to check for the equality between the cases' respective values/expressions and the argument of the switch statement .IF TRUE,THE CODE RUNS!!!
+  // If the value  is equal ===(strict equality) to any of the values in any case,the executable code runs untill it gets to a break.
   switch (day) {
     case "monday": // day === "monday"
       console.log("plan you weekly scedule");
       console.log("go to coding meetup");
+      // breaks separate different cases
       break;
 
     case "tuesday": // case checks for strict equality
@@ -36,6 +47,7 @@ for (let i = 0; i < dayarray.length; i++) {
     case "saturday":
     case "sunday":
       console.log("take a chill pill");
+      break;
     //   this is basically like the else statement,if no condition was met,this will then be run
     default:
       console.log("this is not in the array");
