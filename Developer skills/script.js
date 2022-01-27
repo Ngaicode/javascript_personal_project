@@ -31,6 +31,7 @@ console.log(
   "DEvelop a genuine curiosity and passion for understanding of how things actually work"
 );
 
+// PROBLEM 1
 // we work for a company building a smart home thermometer.Our most recent task is this:Given  an array of temperatures of one day,calculate the temperature amplitude.Keep in mind that sometimes there might be a sensor error
 
 const temperature = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
@@ -53,7 +54,7 @@ const calcTempAmplitude = function (temps) {
   let max = temps[0];
   // this statement assumes that the first element in the array is the minimum temperature
   let min = temps[0];
-  // for loop going through the elements of the selected array
+  // for loop going through the elements of the selected array to check for the maximum and minimum temperature
   for (let i = 0; i < temps.length; i++) {
     const currentTemp = temps[i];
     // this statement skips over elements in the array that are not numbers
@@ -69,3 +70,39 @@ const calcTempAmplitude = function (temps) {
 };
 const amplitude = calcTempAmplitude(temperature);
 console.log(amplitude);
+
+// PROBLEM 2
+// the function should now receive two arrays
+
+// 1)understanding the problem
+// -Should we implement the same functionality twice?No,we should just merge the two arrays in the begining
+
+// 2)breaking the problem into sub problems
+// -how to merge two arrays
+
+// SOLVING THE PROBLEM
+const calcTempAmplitudenew = function (_t1, _t2) {
+  // the concat method joins the two arrays into one
+  const temps = _t1.concat(_t2);
+  console.log(temps);
+
+  // this statement assumes that the first element of the selected aray is the maximum temprature
+  let max = temps[0];
+  // this statement assumes that the first element in the array is the minimum temperature
+  let min = temps[0];
+  // for loop going through the elements of the selected array to check for the maximum and minimum temperature
+  for (let i = 0; i < temps.length; i++) {
+    const currentTemp = temps[i];
+    // this statement skips over elements in the array that are not numbers
+    if (typeof currentTemp !== "number") continue;
+    // if the current temp is greater than the max,then that should become the max
+    if (currentTemp > max) max = currentTemp;
+    // if the current temp is less than the min ,then that should become the min
+    if (currentTemp < min) min = currentTemp;
+  }
+  console.log(max);
+  console.log(min);
+  return max - min;
+};
+const amplitudeNew = calcTempAmplitudenew(temperature, [10, 31, 11]);
+console.log(amplitudeNew);
