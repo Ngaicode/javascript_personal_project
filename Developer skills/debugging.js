@@ -73,9 +73,11 @@ const printForecast = (arr) => {
   let string = "";
   for (let i = 0; i < arr.length; i++) {
     // similar to  string +=  `...${arr[i]}°C in ${i + 1} days `;
+    // the string variable is dynamically re-assined every time the loop does an iteration
     string = string + `...${arr[i]}°C in ${i + 1} days `;
   }
   console.log(string);
 };
+
 const string = printForecast(data1);
 console.log(string);
