@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(255, 238, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+/* the class selector is a dot,we first type a dot then the name of the class */
+.first {
+  color: aqua;
+}
+
+/* the id selector is the hash/octothorpe followed by the id name */
+#your-name {
+  background-color: aqua;
+  border: 5px solid #444;
+}
