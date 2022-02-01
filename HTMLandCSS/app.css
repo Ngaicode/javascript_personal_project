@@ -1,13 +1,30 @@
+/*  the Asterisk is a special element selector that selects all the elements of a page */
+/* this is called a global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* we can use element selectors ,which  simply works by referencing the element that we want to style  */
 body {
   background-color: rgb(255, 238, 0);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
+  padding: 75px;
 }
 
 /* we can use element selectors ,which  simply works by referencing the element that we want to style  */
 h1 {
   font-size: 40px;
+  margin-bottom: 25px;
+}
+p {
+  margin-bottom: 20px;
+}
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 /* the class selector is a dot,we first type a dot then the name of the class */
@@ -19,4 +36,24 @@ h1 {
 #your-name {
   background-color: aqua;
   border: 5px solid #444;
+  width: 400px;
+  padding: 25px;
+  margin-top: 30px;
+}
+input,
+button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+a {
+  background-color: aqua;
+}
+/*we can also individualy select the child elements found inside a class or an an id  */
+#your-name h2 {
+  color: olive;
+}
+
+#cat-pic {
+  width: 300px;
 }
