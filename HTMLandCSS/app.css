@@ -27,11 +27,13 @@ h2 {
   text-align: center;
 }
 
+/* class selector */
 /* the class selector is a dot,we first type a dot then the name of the class */
 .first {
   color: aqua;
 }
 
+/* ID selector */
 /* the id selector is the hash/octothorpe followed by the id name */
 #your-name {
   background-color: aqua;
