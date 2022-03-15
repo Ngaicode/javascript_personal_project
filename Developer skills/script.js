@@ -81,14 +81,15 @@ console.log(amplitude);
 // -how to merge two arrays
 
 // SOLVING THE PROBLEM
+// function declaration
 const calcTempAmplitudenew = function (_t1, _t2) {
   // the concat method joins the two arrays into one
   const temps = _t1.concat(_t2);
   console.log(temps);
 
-  // this statement assumes that the first element of the selected aray is the maximum temprature
+  // this statement assumes that the first element of the selected aray is the maximum temprature ,it  later gets re-assigned in the forloop 
   let max = temps[0];
-  // this statement assumes that the first element in the array is the minimum temperature
+  // this statement assumes that the first element in the array is the minimum temperature it ,later gets re-assigned in the forloop
   let min = temps[0];
   // for loop going through the elements of the selected array to check for the maximum and minimum temperature
   for (let i = 0; i < temps.length; i++) {
